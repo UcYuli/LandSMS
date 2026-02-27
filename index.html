@@ -41,24 +41,31 @@
     <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
+                <!-- Logo 區塊 -->
+                <div class="flex items-center space-x-4">
                     <img src="https://ws.hl.gov.tw/001/Upload/404/sites/pagebackimage/fff729bd-7167-4ee5-a6b9-98742ea754ce.gif"
-                     alt="花蓮縣玉里地政事務所" class="h-14 md:h-16 w-auto object-contain">
-                    <span class="text-xl md:text-2xl font-bold text-custom-blue tracking-tight">地籍異動即時通服務推廣</span>
+                         alt="花蓮縣玉里地政事務所" class="h-12 md:h-14 w-auto object-contain">
+                    <div class="hidden sm:block h-8 w-px bg-gray-200"></div>
+                    <span class="text-lg md:text-xl lg:text-2xl font-bold text-custom-blue tracking-tight truncate max-w-[200px] md:max-w-none">
+                        地籍異動即時通
+                    </span>
                 </div>
                 
                 <!-- 桌面版選單 -->
-                <div class="hidden md:flex items-center space-x-8">
+                <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
                     <a href="#about" class="font-medium hover:text-custom-blue transition">服務簡介</a>
                     <a href="#sms-id" class="font-medium hover:text-custom-blue transition">簡訊辨識</a>
                     <a href="#contact" class="font-medium hover:text-custom-blue transition">聯絡我們</a>
-                    <button class="bg-custom-orange text-white px-6 py-2.5 rounded-full font-bold hover:shadow-lg transform hover:-translate-y-0.5 transition">
+                    <button class="bg-custom-orange text-white px-5 py-2 rounded-full font-bold hover:shadow-lg transform hover:-translate-y-0.5 transition text-sm lg:text-base">
                         立即免費申請
                     </button>
                 </div>
 
-                <!-- 手機版選單按鈕 (僅示意) -->
-                <div class="md:hidden">
-                    <i class="fas fa-bars text-2xl text-custom-blue"></i>
+                <!-- 手機版選單按鈕 -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-custom-blue focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -66,7 +73,7 @@
 
     <!-- 首屏內容 (Hero) -->
     <section class="hero-gradient overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 pt-16 pb-24 md:pt-24 md:pb-32 flex flex-col md:flex-row items-center">
+        <div class="max-w-7xl mx-auto px-4 pt-12 pb-20 md:pt-24 md:pb-32 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 text-center md:text-left space-y-8 z-10">
                 <div class="inline-flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-sm border border-blue-100">
                     <span class="relative flex h-3 w-3">
@@ -76,49 +83,52 @@
                     <span class="text-sm font-bold text-gray-600">產權保障即時通知服務</span>
                 </div>
                 
-                <h1 class="text-4xl md:text-6xl font-black text-custom-blue leading-tight">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-black text-custom-blue leading-tight">
                     房產異動 <br>
                     <span class="text-custom-teal">簡訊即時通報</span>
                 </h1>
                 
-                <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-lg">
+                <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-lg mx-auto md:mx-0">
                     申請後，名下產權若有買賣、抵押、贈與等異動情形，系統將第一時間發送簡訊通知，讓您有效防範冒名與詐騙！
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start">
-                    <a href="#sms-id" class="bg-custom-blue text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-xl hover:bg-blue-800 transition text-center">
+                    <a href="#sms-id" class="bg-custom-blue text-white px-8 py-4 rounded-2xl font-bold text-lg shadow-xl hover:bg-blue-800 transition text-center">
                         <i class="fas fa-shield-check mr-2"></i> 如何防詐辨識
                     </a>
-                    <a href="#" class="bg-white text-custom-blue border-2 border-custom-blue px-10 py-4 rounded-2xl font-bold text-lg hover:bg-blue-50 transition text-center">
+                    <a href="#" class="bg-white text-custom-blue border-2 border-custom-blue px-8 py-4 rounded-2xl font-bold text-lg hover:bg-blue-50 transition text-center">
                         線上申辦流程
                     </a>
                 </div>
             </div>
 
-            <div class="md:w-1/2 mt-16 md:mt-0 relative flex justify-center">
+            <div class="md:w-1/2 mt-12 md:mt-0 relative flex justify-center">
                 <!-- 裝飾圓圈 -->
-                <div class="absolute w-72 h-72 bg-custom-teal opacity-10 rounded-full -top-10 -right-10 blur-3xl"></div>
+                <div class="absolute w-64 h-64 bg-custom-teal opacity-10 rounded-full -top-10 -right-10 blur-3xl"></div>
                 
                 <!-- 手機模擬顯示 111 簡訊 -->
-                <div class="phone-frame w-72 bg-gray-100 overflow-hidden relative">
+                <div class="phone-frame w-64 md:w-72 bg-gray-100 overflow-hidden relative">
                     <div class="h-6 bg-gray-200 w-full mb-4"></div>
                     <div class="px-4 py-2">
                         <div class="flex items-center space-x-3 mb-6">
                             <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold">111</div>
                             <div>
-                                <p class="text-xs font-bold text-gray-500 uppercase tracking-widest">政府專屬短碼</p>
+                                <p class="text-[10px] font-bold text-gray-500 uppercase tracking-widest">政府專屬短碼</p>
                                 <p class="text-sm font-bold">來電顯示「111」</p>
                             </div>
                         </div>
                         
-                        <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 text-sm leading-relaxed mb-4">
-                            <p class="font-bold text-custom-blue mb-2">簡訊開頭為您手機末３碼</p></br>
-                            <p class="font-bold text-custom-blue mb-2">隨後緊接 ＂管轄地政事務所＂</p></br>
-                            您名下位於「XX市XX區XX路」之土地正於地政事務所辦理【買賣】登記，請確認是否為您本人授權辦理...</br>
-                            <p class="font-bold text-custom-blue mb-2">不會有任何連結可以點選</p></br>
+                        <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 text-xs md:text-sm leading-relaxed mb-4">
+                            <p class="font-bold text-custom-blue mb-2 text-center border-b pb-2">簡訊檢核重點</p>
+                            <ul class="space-y-2 text-gray-700">
+                                <li>● 開頭為您<span class="text-custom-orange font-bold">手機末３碼</span></li>
+                                <li>● 緊接<span class="text-custom-teal font-bold">管轄地政事務所</span></li>
+                                <li>● 內容詳列標的與案件類型</li>
+                                <li class="text-red-500 font-bold underline">● 不會有任何連結點選</li>
+                            </ul>
                         </div>
                         
-                        <div class="bg-blue-50 p-3 rounded-xl text-[10px] text-blue-800 text-center">
+                        <div class="bg-blue-50 p-2 rounded-xl text-[10px] text-blue-800 text-center">
                             ※ 認明來源 111，防範詐騙
                         </div>
                     </div>
@@ -128,9 +138,9 @@
     </section>
 
     <!-- 111政府簡訊特徵 (防詐核心) -->
-    <section id="sms-id" class="py-24 bg-white">
+    <section id="sms-id" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center max-w-3xl mx-auto mb-20 space-y-4">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
                 <h2 class="text-3xl md:text-4xl font-black text-gray-900">
                     拒絕詐騙！<span class="text-custom-orange">認明 111 政府簡訊</span>
                 </h2>
@@ -140,9 +150,9 @@
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
                 <!-- 特徵 1 -->
-                <div class="group bg-gray-50 p-10 rounded-[40px] border border-gray-100 hover:bg-white hover:shadow-2xl hover:border-blue-100 transition-all duration-300">
+                <div class="group bg-gray-50 p-8 lg:p-10 rounded-[40px] border border-gray-100 hover:bg-white hover:shadow-2xl hover:border-blue-100 transition-all duration-300">
                     <div class="w-16 h-16 bg-blue-100 text-custom-blue rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition">
                         <i class="fas fa-phone-volume"></i>
                     </div>
@@ -153,7 +163,7 @@
                 </div>
 
                 <!-- 特徵 2 -->
-                <div class="group bg-gray-50 p-10 rounded-[40px] border border-gray-100 hover:bg-white hover:shadow-2xl hover:border-teal-100 transition-all duration-300">
+                <div class="group bg-gray-50 p-8 lg:p-10 rounded-[40px] border border-gray-100 hover:bg-white hover:shadow-2xl hover:border-teal-100 transition-all duration-300">
                     <div class="w-16 h-16 bg-teal-100 text-custom-teal rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition">
                         <i class="fas fa-link-slash"></i>
                     </div>
@@ -164,7 +174,7 @@
                 </div>
 
                 <!-- 特徵 3 -->
-                <div class="group bg-gray-50 p-10 rounded-[40px] border border-gray-100 hover:bg-white hover:shadow-2xl hover:border-orange-100 transition-all duration-300">
+                <div class="group bg-gray-50 p-8 lg:p-10 rounded-[40px] border border-gray-100 hover:bg-white hover:shadow-2xl hover:border-orange-100 transition-all duration-300">
                     <div class="w-16 h-16 bg-orange-100 text-custom-orange rounded-2xl flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition">
                         <i class="fas fa-file-invoice"></i>
                     </div>
@@ -178,19 +188,19 @@
     </section>
 
     <!-- 服務特色說明 -->
-    <section id="about" class="py-24 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-16 items-center">
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-12 lg:gap-16 items-center">
             <div class="md:w-1/2">
                 <div class="grid grid-cols-2 gap-4">
                     <div class="bg-white p-6 rounded-3xl shadow-sm">
                         <div class="text-custom-teal font-black text-4xl mb-2">11</div>
-                        <p class="text-gray-500 font-bold">項異動類別</p>
-                        <p class="text-xs text-gray-400 mt-2">包含買賣、贈與、設定等</p>
+                        <p class="text-gray-500 font-bold text-sm">項異動類別</p>
+                        <p class="text-[10px] text-gray-400 mt-2">包含買賣、贈與、設定等</p>
                     </div>
                     <div class="bg-white p-6 rounded-3xl shadow-sm mt-8">
                         <div class="text-custom-blue font-black text-4xl mb-2">0</div>
-                        <p class="text-gray-500 font-bold">元申請費用</p>
-                        <p class="text-xs text-gray-400 mt-2">完全免費的公眾服務</p>
+                        <p class="text-gray-500 font-bold text-sm">元申請費用</p>
+                        <p class="text-[10px] text-gray-400 mt-2">完全免費的公眾服務</p>
                     </div>
                 </div>
             </div>
@@ -215,27 +225,27 @@
     </section>
 
     <!-- 聯絡與諮詢 -->
-    <section id="contact" class="py-24 bg-white">
+    <section id="contact" class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-4">
-            <div class="bg-custom-blue rounded-[50px] p-8 md:p-16 text-white text-center relative overflow-hidden">
+            <div class="bg-custom-blue rounded-[40px] md:rounded-[50px] p-8 md:p-16 text-white text-center relative overflow-hidden">
                 <div class="relative z-10">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-8">保障您的權益，現在就撥打諮詢</h2>
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div class="bg-white/10 backdrop-blur-lg p-8 rounded-3xl border border-white/20">
+                    <h2 class="text-2xl md:text-4xl font-bold mb-8">保障您的權益，現在就撥打諮詢</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                        <div class="bg-white/10 backdrop-blur-lg p-6 md:p-8 rounded-3xl border border-white/20">
                             <i class="fas fa-headset text-3xl text-custom-orange mb-4"></i>
-                            <h4 class="text-xl font-bold mb-2">內政部服務熱線</h4>
-                            <p class="text-4xl font-black text-white">1996</p>
-                            <p class="mt-4 text-sm text-blue-100">提供地籍異動即時通相關諮詢</p>
+                            <h4 class="text-lg font-bold mb-2">內政部服務熱線</h4>
+                            <p class="text-3xl md:text-4xl font-black text-white">1996</p>
+                            <p class="mt-4 text-xs text-blue-100">提供地籍異動即時通相關諮詢</p>
                         </div>
-                        <div class="bg-white/10 backdrop-blur-lg p-8 rounded-3xl border border-white/20">
+                        <div class="bg-white/10 backdrop-blur-lg p-6 md:p-8 rounded-3xl border border-white/20">
                             <i class="fas fa-building text-3xl text-custom-orange mb-4"></i>
-                            <h4 class="text-xl font-bold mb-2">地政事務所</h4>
-                            <a href="#" class="inline-block bg-white text-custom-blue px-6 py-2 rounded-full font-bold mt-4 hover:bg-blue-50 transition">
+                            <h4 class="text-lg font-bold mb-2">地政事務所</h4>
+                            <a href="#" class="inline-block bg-white text-custom-blue px-6 py-2 rounded-full font-bold mt-4 hover:bg-blue-50 transition text-sm">
                                 查詢各地所電話
                             </a>
                         </div>
                     </div>
-                    <div class="mt-12 flex flex-col md:flex-row items-center justify-center gap-6 text-sm text-blue-200">
+                    <div class="mt-10 flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 text-xs md:text-sm text-blue-200">
                         <p><i class="fas fa-shield-halved mr-2"></i> 24小時反詐騙專線：165</p>
                         <span class="hidden md:inline">|</span>
                         <p><i class="fas fa-globe mr-2"></i> 內政部地政司數位櫃臺</p>
@@ -255,12 +265,12 @@
                     </div>
                     <span class="text-lg font-bold text-white">地籍異動即時通</span>
                 </div>
-                <div class="flex flex-wrap justify-center gap-8 text-sm">
+                <div class="flex flex-wrap justify-center gap-6 md:gap-8 text-xs md:text-sm">
                     <a href="#" class="hover:text-white transition">隱私權聲明</a>
                     <a href="#" class="hover:text-white transition">資訊安全政策</a>
                     <a href="#" class="hover:text-white transition">內政部官網</a>
                 </div>
-                <div class="text-xs text-gray-600">
+                <div class="text-[10px] md:text-xs text-gray-600">
                     © 2024 內政部地政司 版權所有
                 </div>
             </div>
@@ -269,7 +279,7 @@
 
     <!-- 浮動申請按鈕 (Mobile Only) -->
     <div class="md:hidden fixed bottom-6 left-6 right-6 z-50">
-        <button class="w-full bg-custom-orange text-white py-4 rounded-2xl font-black text-lg shadow-2xl">
+        <button class="w-full bg-custom-orange text-white py-4 rounded-2xl font-black text-lg shadow-2xl active:scale-95 transition-transform">
             立即申請保產權
         </button>
     </div>
